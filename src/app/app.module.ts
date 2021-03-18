@@ -7,7 +7,6 @@ import { HeaderModule } from './header/header.module';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { IndexPageComponent } from './index-page/index-page.component';
-import { AddBookComponent } from './add-book/add-book.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +22,7 @@ import { AddBookComponent } from './add-book/add-book.component';
         component: IndexPageComponent,
       },
       { path: 'add',
-        component: AddBookComponent,
+        loadChildren: () => import('./add-book/add-book.module').then(m => m.AddBookModule),
       }
     ]),
   ],
