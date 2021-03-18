@@ -1,0 +1,17 @@
+.header {
+  background: #000;
+  opacity: 0.8;
+  color: aliceblue;
+
+  &-title {
+    font-size: 2rem;
+  }
+
+  &-logo {
+    width: 100px;
+
+    & img {
+      width: 100%;
+    }
+  }
+}

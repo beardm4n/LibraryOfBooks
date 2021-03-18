@@ -18,10 +18,12 @@ import { IndexPageComponent } from './index-page/index-page.component';
     ReactiveFormsModule,
     HeaderModule,
     RouterModule.forRoot([
-      { path: '',
+      {
+        path: '',
         component: IndexPageComponent,
       },
-      { path: 'add',
+      {
+        path: 'add',
         loadChildren: () => import('./add-book/add-book.module').then(m => m.AddBookModule),
       }
     ]),
