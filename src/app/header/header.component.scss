@@ -1,10 +1,14 @@
 .header {
-  background: #000;
-  opacity: 0.8;
+  background: #24292e;
   color: aliceblue;
 
   &-title {
     font-size: 2rem;
+    outline: none;
+  }
+
+  &-nav-btn {
+    outline: none;
   }
 
   &-logo {
