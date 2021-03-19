@@ -7,7 +7,6 @@ import { HeaderModule } from './header/header.module';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { BookDetailComponent } from './shared/book-detail/book-detail.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +28,7 @@ import { BookDetailComponent } from './shared/book-detail/book-detail.component'
       },
       {
         path: 'book/:bookId',
-        component: BookDetailComponent,
+        loadChildren: () => import('./shared/book-detail/book-detail.module').then(m => m.BookDetailModule),
       }
     ]),
     HttpClientModule,
