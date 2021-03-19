@@ -8,6 +8,9 @@ import { BookCardComponent } from './book-card.component';
   declarations: [BookCardComponent],
   imports: [
     CommonModule
+  ],
+  exports: [
+    BookCardComponent,
   ]
 })
 export class BookCardModule { }

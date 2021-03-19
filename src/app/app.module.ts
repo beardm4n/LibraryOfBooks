@@ -20,7 +20,7 @@ import { IndexPageComponent } from './index-page/index-page.component';
     RouterModule.forRoot([
       {
         path: '',
-        component: IndexPageComponent,
+        loadChildren: () => import('./index-page/index-page.module').then(m => m.IndexPageModule),
       },
       {
         path: 'add',
