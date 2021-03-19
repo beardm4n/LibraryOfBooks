@@ -73,13 +73,15 @@
 
     <div class="row mt-3 mb-5">
       <div class="col-6 d-flex justify-content-center">
-        <button mat-fab color="primary" aria-label="Example icon button with a delete icon" [disabled]="btnEditDisabled">
+        <button mat-fab color="primary" aria-label="Example icon button with a delete icon"
+                [disabled]="btnEditDisabled" (click)="editForm()">
           <mat-icon>edit</mat-icon>
         </button>
       </div>
 
       <div class="col-6 d-flex justify-content-center">
-        <button mat-fab color="primary" aria-label="Example icon button with a delete icon" [disabled]="btnDoneDisabled">
+        <button mat-fab color="primary" aria-label="Example icon button with a delete icon"
+                [disabled]="btnDoneDisabled || !form.valid" (click)="confirmEditing()">
           <mat-icon>done</mat-icon>
         </button>
       </div>

@@ -16,7 +16,7 @@ export class BookDetailComponent implements OnInit, OnDestroy {
   public form: FormGroup = this.fb.group({
     name: ['', [Validators.required, Validators.minLength(5)]],
     cover: null,
-    description: ['', [Validators.required, Validators.minLength(5)]],
+    description: ['', Validators.required],
     author: ['', [Validators.required, Validators.minLength(5)]],
     publisher: ['', [Validators.required, Validators.minLength(5)]],
     codeIsbn: ['', Validators.required],
@@ -26,7 +26,7 @@ export class BookDetailComponent implements OnInit, OnDestroy {
     comment: null,
     personalNotes: null
   });
-  public btnDoneDisabled = false;
+  public btnDoneDisabled = true;
   public btnEditDisabled = false;
 
   private alive = true;
@@ -72,6 +72,16 @@ export class BookDetailComponent implements OnInit, OnDestroy {
       personalNotes: value.personalNotes
     };
     this.form.setValue(form);
+  }
+
+  editForm(): void {
+    this.btnDoneDisabled = !this.btnDoneDisabled;
+    this.btnEditDisabled = !this.btnEditDisabled;
+  }
+
+  confirmEditing(): void {
+    this.btnDoneDisabled = !this.btnDoneDisabled;
+    this.btnEditDisabled = !this.btnEditDisabled;
   }
 
   ngOnDestroy(): void {
