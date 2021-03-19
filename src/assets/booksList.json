@@ -1,0 +1,68 @@
+{ "books": [
+    {
+      "name": "React.js Быстрый старт",
+      "cover": "assets/",
+      "description": "",
+      "author": "Стоян Стефанов",
+      "publisher": "Питер",
+      "codeIsbn": 321,
+      "year": 2015,
+      "pages": 324,
+      "rating": 4,
+      "comment": "",
+      "personalNotes": ""
+    },
+    {
+      "name": "React.js Быстрый старт",
+      "cover": "assets/",
+      "description": "",
+      "author": "Стоян Стефанов",
+      "publisher": "Питер",
+      "codeIsbn": 321,
+      "year": 2015,
+      "pages": 324,
+      "rating": 4,
+      "comment": "",
+      "personalNotes": ""
+    },
+  {
+    "name": "React.js Быстрый старт",
+    "cover": "assets/",
+    "description": "",
+    "author": "Стоян Стефанов",
+    "publisher": "Питер",
+    "codeIsbn": 321,
+    "year": 2015,
+    "pages": 324,
+    "rating": 4,
+    "comment": "",
+    "personalNotes": ""
+  },
+  {
+    "name": "React.js Быстрый старт",
+    "cover": "assets/",
+    "description": "",
+    "author": "Стоян Стефанов",
+    "publisher": "Питер",
+    "codeIsbn": 321,
+    "year": 2015,
+    "pages": 324,
+    "rating": 4,
+    "comment": "",
+    "personalNotes": ""
+  },
+  {
+    "name": "React.js Быстрый старт",
+    "cover": "assets/",
+    "description": "",
+    "author": "Стоян Стефанов",
+    "publisher": "Питер",
+    "codeIsbn": 321,
+    "year": 2015,
+    "pages": 324,
+    "rating": 4,
+    "comment": "",
+    "personalNotes": ""
+  }
+  ]
+}

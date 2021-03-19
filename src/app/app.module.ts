@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderModule } from './header/header.module';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ReactiveFormsModule } from '@angular/forms';
         loadChildren: () => import('./add-book/add-book.module').then(m => m.AddBookModule),
       }
     ]),
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

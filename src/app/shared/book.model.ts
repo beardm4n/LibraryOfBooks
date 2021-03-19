@@ -1,3 +1,7 @@
+export interface Books {
+  books: Book[];
+}
+
 export interface Book {
   name: string;
   cover: string;
