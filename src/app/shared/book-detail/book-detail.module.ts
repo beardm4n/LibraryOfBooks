@@ -6,6 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { books } from '../booksList';
 
 @NgModule({
   declarations: [BookDetailComponent],
@@ -20,6 +21,9 @@ import { MatButtonModule } from '@angular/material/button';
     MatFormFieldModule,
     MatIconModule,
     MatButtonModule,
+  ],
+  providers: [
+    { provide: 'BOOKS', useValue: books }
   ]
 })
 export class BookDetailModule { }

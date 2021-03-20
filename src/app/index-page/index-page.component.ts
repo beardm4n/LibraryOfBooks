@@ -1,6 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
-import { takeWhile } from 'rxjs/operators';
-import { AppService } from '../app.service';
+import {Component, Inject, OnDestroy, OnInit} from '@angular/core';
 import { Book } from '../shared/book.model';
 
 @Component({
@@ -14,19 +12,15 @@ export class IndexPageComponent implements OnInit, OnDestroy {
   private alive = true;
 
   constructor(
-    private appService: AppService,
+    @Inject('BOOKS') public booksList: Book[],
   ) { }
 
   ngOnInit(): void {
-    this.getBooksList();
+    this.init();
   }
 
-  getBooksList(): void {
-    this.appService.getBook()
-      .pipe(takeWhile(() => this.alive))
-      .subscribe(v => {
-        this.books = v.books;
-      });
+  init(): void {
+    this.books = this.booksList;
   }
 
   ngOnDestroy(): void {
