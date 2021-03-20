@@ -3,67 +3,67 @@
     <form [formGroup]="form" class="col-12 mb-4">
       <div class="row">
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="a">Название
-            <input type="text" id="a" formControlName="name"
+          <label for="a" class="w-100">Название
+            <input type="text" id="a" formControlName="name" class="w-100"
                    [class.border-error]="!form.get('name').valid">
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="b">Обложка книги
-            <input type="text" id="b" formControlName="cover">
+          <label for="b" class="w-100">Обложка книги
+            <input type="text" id="b" formControlName="cover" class="w-100">
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="c">Описание
-            <input type="text" id="c" formControlName="description"
+          <label for="c" class="w-100">Описание
+            <input type="text" id="c" formControlName="description" class="w-100"
                    [class.border-error]="!form.get('description').valid">
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="d">Автор
+          <label for="d" class="w-100">Автор
             <input type="text" id="d" formControlName="author"
-                   [class.border-error]="!form.get('author').valid">
+                   [class.border-error]="!form.get('author').valid" class="w-100">
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="e">Издательство
-            <input type="text" id="e" formControlName="publisher"
+          <label for="e" class="w-100">Издательство
+            <input type="text" id="e" formControlName="publisher" class="w-100"
                    [class.border-error]="!form.get('publisher').valid">
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="f">Код ISBN
-            <input type="number" id="f" formControlName="codeIsbn"
+          <label for="f" class="w-100">Код ISBN
+            <input type="number" id="f" formControlName="codeIsbn" class="w-100"
                    [class.border-error]="!form.get('codeIsbn').valid">
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="g">Год издания
-            <input type="number" id="g" formControlName="year"
+          <label for="g" class="w-100">Год издания
+            <input type="number" id="g" formControlName="year" class="w-100"
                    [class.border-error]="!form.get('year').valid">
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="h">Количество страниц
-            <input type="number" id="h" formControlName="pages">
+          <label for="h" class="w-100">Количество страниц
+            <input type="number" id="h" formControlName="pages" class="w-100">
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="i">Рейтинг
-            <input class="rating" type="number" min="1" max="5" id="i" formControlName="rating">
+          <label for="i" class="w-100">Рейтинг
+            <input class="rating w-100" type="number" min="0" max="5" id="i" formControlName="rating">
             <div [hidden]="form.get('rating').valid" class="alert-danger">
               рейтинг от 0 до 5
             </div>
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="j">Отзывы тех, кто прочитал
-            <textarea type="text" id="j" formControlName="comment"></textarea>
+          <label for="j" class="w-100">Отзывы тех, кто прочитал
+            <textarea type="text" id="j" formControlName="comment" class="w-100"></textarea>
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="k">Личные заметки по книге
-            <textarea type="text" id="k" formControlName="personalNotes"></textarea>
+          <label for="k" class="w-100">Личные заметки по книге
+            <textarea type="text" id="k" formControlName="personalNotes" class="w-100"></textarea>
           </label>
         </div>
       </div>

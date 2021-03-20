@@ -18,67 +18,76 @@
     <form [formGroup]="form" class="col-12 mb-4">
       <div class="row">
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="a">
-            <input type="text" id="a" formControlName="name"
+          <label for="a" class="w-100">
+            <input type="text" id="a" formControlName="name" class="w-100"
                    [class.border-error]="!form.get('name').valid" [attr.disabled]="btnDoneDisabled ? '' : null">
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="b">
-            <input type="text" id="b" formControlName="cover" [attr.disabled]="btnDoneDisabled ? '' : null">
+          <label for="b" class="w-100">
+            <input type="text" id="b" formControlName="cover" class="w-100"
+                   [attr.disabled]="btnDoneDisabled ? '' : null">
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="c">
+          <label for="c" class="w-100">
             <input type="text" id="c" formControlName="description"
-                   [class.border-error]="!form.get('description').valid" [attr.disabled]="btnDoneDisabled ? '' : null">
+                   [class.border-error]="!form.get('description').valid" class="w-100"
+                   [attr.disabled]="btnDoneDisabled ? '' : null">
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="d">
+          <label for="d" class="w-100">
             <input type="text" id="d" formControlName="author"
-                   [class.border-error]="!form.get('author').valid" [attr.disabled]="btnDoneDisabled ? '' : null">
+                   [class.border-error]="!form.get('author').valid" class="w-100"
+                   [attr.disabled]="btnDoneDisabled ? '' : null">
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="e">
+          <label for="e" class="w-100">
             <input type="text" id="e" formControlName="publisher"
-                   [class.border-error]="!form.get('publisher').valid" [attr.disabled]="btnDoneDisabled ? '' : null">
+                   [class.border-error]="!form.get('publisher').valid" class="w-100"
+                   [attr.disabled]="btnDoneDisabled ? '' : null">
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="f">
+          <label for="f" class="w-100">
             <input type="number" id="f" formControlName="codeIsbn"
-                   [class.border-error]="!form.get('codeIsbn').valid" [attr.disabled]="btnDoneDisabled ? '' : null">
+                   [class.border-error]="!form.get('codeIsbn').valid" class="w-100"
+                   [attr.disabled]="btnDoneDisabled ? '' : null">
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="g">
+          <label for="g" class="w-100">
             <input type="number" id="g" formControlName="year"
-                   [class.border-error]="!form.get('year').valid" [attr.disabled]="btnDoneDisabled ? '' : null">
+                   [class.border-error]="!form.get('year').valid" class="w-100"
+                   [attr.disabled]="btnDoneDisabled ? '' : null">
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="h">
-            <input type="number" id="h" formControlName="pages" [attr.disabled]="btnDoneDisabled ? '' : null">
+          <label for="h" class="w-100">
+            <input type="number" id="h" formControlName="pages" class="w-100"
+                   [attr.disabled]="btnDoneDisabled ? '' : null">
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="i">
-            <input class="rating" type="number" min="1" max="5" id="i" formControlName="rating" [attr.disabled]="btnDoneDisabled ? '' : null">
+          <label for="i" class="w-100">
+            <input class="rating w-100" type="number" min="0" max="5" id="i" formControlName="rating" [attr.disabled]="btnDoneDisabled ? '' : null">
             <div [hidden]="form.get('rating').valid" class="alert-danger">
               рейтинг от 1 до 5
             </div>
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="j">
-            <textarea type="text" id="j" formControlName="comment" [attr.disabled]="btnDoneDisabled ? '' : null"></textarea>
+          <label for="j" class="w-100">
+            <textarea type="text" id="j" formControlName="comment" class="w-100"
+                      [attr.disabled]="btnDoneDisabled ? '' : null"></textarea>
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
-          <label for="k">
-            <textarea type="text" id="k" formControlName="personalNotes" [attr.disabled]="btnDoneDisabled ? '' : null"></textarea>
+          <label for="k" class="w-100">
+            <textarea type="text" id="k" formControlName="personalNotes" class="w-100"
+                      [attr.disabled]="btnDoneDisabled ? '' : null"></textarea>
           </label>
         </div>
       </div>

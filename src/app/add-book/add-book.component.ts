@@ -17,7 +17,7 @@ export class AddBookComponent implements OnInit {
     codeIsbn: ['', Validators.required],
     year: ['', Validators.required],
     pages: null,
-    rating: ['', [Validators.min(1), Validators.max(5)]],
+    rating: ['', [Validators.min(0), Validators.max(5)]],
     comment: null,
     personalNotes: null
   });

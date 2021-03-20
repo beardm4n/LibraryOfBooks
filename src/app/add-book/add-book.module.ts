@@ -4,6 +4,7 @@ import { AddBookComponent } from './add-book.component';
 import { RouterModule } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 import { books } from '../shared/booksList';
 
 @NgModule({
@@ -18,6 +19,7 @@ import { books } from '../shared/booksList';
     ]),
     MatIconModule,
     ReactiveFormsModule,
+    MatButtonModule,
   ],
   exports: [
     AddBookComponent,
