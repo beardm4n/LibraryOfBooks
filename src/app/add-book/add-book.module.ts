@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { AddBookComponent } from './add-book.component';
 import { RouterModule } from '@angular/router';
+import { MatIconModule } from '@angular/material/icon';
+import { ReactiveFormsModule } from '@angular/forms';
+import { books } from '../shared/booksList';
 
 @NgModule({
   declarations: [AddBookComponent],
@@ -12,10 +15,15 @@ import { RouterModule } from '@angular/router';
         path: '',
         component: AddBookComponent,
       }
-    ])
+    ]),
+    MatIconModule,
+    ReactiveFormsModule,
   ],
   exports: [
     AddBookComponent,
+  ],
+  providers: [
+    { provide: 'BOOKS', useValue: books }
   ]
 })
 export class AddBookModule { }
