@@ -1,12 +1,12 @@
-<div class="book-card container">
-  <div class="row">
+<div class="book-card container d-flex flex-column justify-content-end">
+  <div class="d-flex flex-column justify-content-end">
     <img *ngIf="data.cover" [src]="data.cover" alt="book">
     <img *ngIf="!data.cover" src="assets/no_photo.png" alt="book">
   </div>
-  <div class="row mt-2 mb-2">
+  <div class="mt-2 mb-2">
     <div class="book-card-title">{{data.name}}</div>
   </div>
-  <div class="row">
+  <div class="d-flex justify-content-start align-items-center">
     <div class="book-card-rating" *ngFor="let star of rating">
       <mat-icon>star</mat-icon>
     </div>
