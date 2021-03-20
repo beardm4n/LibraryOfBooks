@@ -1,3 +1,13 @@
+.preview {
+
+  &-book {
+    width: 100px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    padding: 0;
+  }
+}
+
 label {
   width: 100%;
 }
