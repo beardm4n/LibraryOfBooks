@@ -1,11 +1,12 @@
-import {Component, Inject, OnInit} from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject, OnInit } from '@angular/core';
 import { Book } from '../shared/book.model';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-add-book',
   templateUrl: './add-book.component.html',
-  styleUrls: ['./add-book.component.scss']
+  styleUrls: ['./add-book.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AddBookComponent implements OnInit {
   public form: FormGroup = this.fb.group({

@@ -6,11 +6,15 @@
     </div>
   </div>
 
-  <div class="row mt-5 preview">
+  <div class="row mt-5 about-book">
     <div class="col-3">
-      <div> Preview </div>
-      <img [src]="book.cover" alt="cover of book" class="preview-book" *ngIf="book.cover">
-      <img src="assets/no_photo.png" alt="cover of book" class="preview-book" *ngIf="!book.cover">
+      <div class="mb-3 about-book-title"> Preview </div>
+      <img [src]="book.cover" alt="cover of book" class="about-book-preview" *ngIf="book.cover">
+      <img src="assets/no_photo.png" alt="cover of book" class="about-book-preview" *ngIf="!book.cover">
+    </div>
+    <div class="col-9">
+      <div class="mb-3 about-book-title"> Описание </div>
+      <p class="about-book-description">{{book.description}}</p>
     </div>
   </div>
 

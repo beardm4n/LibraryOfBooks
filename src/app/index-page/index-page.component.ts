@@ -1,10 +1,11 @@
-import {Component, Inject, OnDestroy, OnInit} from '@angular/core';
+import { ChangeDetectionStrategy, Component, Inject, OnDestroy, OnInit } from '@angular/core';
 import { Book } from '../shared/book.model';
 
 @Component({
   selector: 'app-index-page',
   templateUrl: './index-page.component.html',
-  styleUrls: ['./index-page.component.scss']
+  styleUrls: ['./index-page.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class IndexPageComponent implements OnInit, OnDestroy {
   public books: Book[];

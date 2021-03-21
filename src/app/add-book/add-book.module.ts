@@ -5,7 +5,6 @@ import { RouterModule } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
-import { books } from '../shared/booksList';
 
 @NgModule({
   declarations: [AddBookComponent],
@@ -23,9 +22,6 @@ import { books } from '../shared/booksList';
   ],
   exports: [
     AddBookComponent,
-  ],
-  providers: [
-    { provide: 'BOOKS', useValue: books }
   ]
 })
 export class AddBookModule { }

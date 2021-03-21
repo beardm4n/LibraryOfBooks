@@ -1,5 +1,10 @@
-.preview {
-  &-book {
+.about-book {
+  &-title {
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  &-preview {
     width: 100px;
     border: 1px solid rgba(128, 128, 128, 0.2);
     border-radius: 3px;

@@ -7,6 +7,7 @@ import { HeaderModule } from './header/header.module';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { books } from './shared/booksList';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,9 @@ import { HttpClientModule } from '@angular/common/http';
     ]),
     HttpClientModule,
   ],
-  providers: [],
+  providers: [
+    { provide: 'BOOKS', useValue: books }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { IndexPageComponent } from './index-page.component';
 import { RouterModule } from '@angular/router';
 import { BookCardModule } from '../shared/book-card/book-card.module';
-import { books } from '../shared/booksList';
 
 @NgModule({
   declarations: [IndexPageComponent],
@@ -16,9 +15,6 @@ import { books } from '../shared/booksList';
       }
     ]),
     BookCardModule
-  ],
-  providers: [
-    { provide: 'BOOKS', useValue: books }
   ]
 })
 export class IndexPageModule { }
