@@ -31,9 +31,10 @@
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
           <label for="c" class="w-100">Описание
-            <input type="text" id="c" formControlName="description"
+            <textarea type="text" id="c" formControlName="description"
                    [class.border-error]="!form.get('description').valid" class="w-100"
                    [attr.disabled]="btnDoneDisabled ? '' : null">
+            </textarea>
           </label>
         </div>
         <div class="col-4 mt-5 d-flex justify-content-center">
