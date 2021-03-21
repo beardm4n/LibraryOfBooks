@@ -10,6 +10,7 @@ export class BookCardComponent implements OnInit {
   @Input() data: Book;
 
   public rating: number[] = [];
+  public stars: number[] = [1, 2, 3, 4, 5];
 
   constructor() { }
 
@@ -19,7 +20,7 @@ export class BookCardComponent implements OnInit {
 
   fillArrayForRating(): void {
     for (let i = 0; i < this.data.rating; i++) {
-      this.rating.push(1);
+      this.rating.push(i);
     }
   }
 

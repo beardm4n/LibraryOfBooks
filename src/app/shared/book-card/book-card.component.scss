@@ -14,8 +14,14 @@
   }
 
   &-rating {
-    color: orange;
+    color: rgba(128, 128, 128, 0.2);
     width: 20px;
-    margin: 0 5px;
+    &:nth-child(even) {
+      margin: 0 5px;
+    }
   }
+}
+
+.color-orange {
+  color: orange;
 }
