@@ -8,6 +8,7 @@ import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { books } from './shared/booksList';
+import { FooterModule } from './footer/footer.module';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { books } from './shared/booksList';
       }
     ]),
     HttpClientModule,
+    FooterModule,
   ],
   providers: [
     { provide: 'BOOKS', useValue: books }
