@@ -9,6 +9,11 @@
 
   &-nav-btn {
     outline: none;
+
+    &:hover {
+      cursor: pointer;
+      color: rosybrown;
+    }
   }
 
   &-logo {
