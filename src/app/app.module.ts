@@ -31,7 +31,15 @@ import { FooterModule } from './footer/footer.module';
       {
         path: 'book/:bookId',
         loadChildren: () => import('./shared/book-detail/book-detail.module').then(m => m.BookDetailModule),
-      }
+      },
+      {
+        path: '404',
+        loadChildren: () => import('./shared/not-found/not-found.module').then(m => m.NotFoundModule),
+      },
+      {
+        path: '**',
+        redirectTo: '/404'
+      },
     ]),
     HttpClientModule,
     FooterModule,
